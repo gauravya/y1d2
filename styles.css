@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.substack-reference {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+article {
+    margin-bottom: 40px;
+}
+h2 {
+    margin-bottom: 5px;
+}
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+.tags {
+    margin-top: 5px;
+}
+.tag {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+.profile-image {
+    display: block;
+    width: 400px;  /* Smaller fixed width */
+    height: auto;
+    margin: 20px auto 0;
+}
