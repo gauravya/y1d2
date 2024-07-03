@@ -54,3 +54,71 @@ video {
     height: auto;
     margin: 20px auto 0;
 }
+
+.subscription-box {
+    background-color: #e0e0e0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.subscription-box p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    margin: 0 0 15px 0;
+    font-size: 1em;
+}
+
+#subscribeBtn {
+    padding: 8px 15px;
+    font-size: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#subscribeBtn:hover {
+    background-color: #333333;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #e0e0e0;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
