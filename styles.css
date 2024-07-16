@@ -203,6 +203,19 @@ video {
   background-color: #f9f9f9;
 }
 
+.image-container {
+  width: 100%;
+  max-width: 600px; /* Adjust this value as needed */
+  margin: 20px auto;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .medium-image {
   max-width: 60%;
   height: auto;
