@@ -181,3 +181,24 @@ video {
   text-decoration: none;
   cursor: pointer;
 }
+
+.meal-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.meal-table th, .meal-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.meal-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.meal-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
