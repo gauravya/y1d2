@@ -202,3 +202,16 @@ video {
 .meal-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+.medium-image {
+  max-width: 60%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .medium-image {
+      max-width: 100%;
+  }
+}
