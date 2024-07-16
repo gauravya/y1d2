@@ -219,7 +219,6 @@ video {
 .medium-image {
   max-width: 60%;
   height: auto;
-  margin: 20px auto;
   display: block;
 }
 
