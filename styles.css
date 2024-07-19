@@ -1,3 +1,4 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -12,12 +13,7 @@ header {
   margin-bottom: 20px;
 }
 
-.substack-reference {
-  color: #666;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
+/* Article styles */
 article {
   margin-bottom: 40px;
 }
@@ -31,6 +27,13 @@ h2 {
   font-size: 0.9em;
 }
 
+.substack-reference {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Tag styles */
 .tags {
   margin-top: 5px;
 }
@@ -43,28 +46,29 @@ h2 {
   margin-right: 5px;
 }
 
-.blog-image {
+/* Media styles */
+.blog-image,
+video,
+.profile-image {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px 0;
 }
 
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
+.center-image {
+  text-align: center;
+}
+
+.center-image img {
+  margin: 0 auto;
 }
 
 .profile-image {
-  display: block;
   width: 400px;
-  height: auto;
   margin: 20px auto 0;
 }
 
-/* Styles for recommendation image */
 .recommendation-image {
   text-align: center;
   margin: 20px 0;
@@ -75,7 +79,6 @@ video {
   height: auto;
 }
 
-/* Styles for media container */
 .media-container {
   display: flex;
   justify-content: space-between;
@@ -88,32 +91,16 @@ video {
 
 .video-container video {
   width: 100%;
-  height: auto;
-  display: block;
   margin: 0;
 }
 
+/* Contact info */
 .contact-info {
   margin-top: 20px;
   font-style: italic;
 }
 
-@media (max-width: 768px) {
-  .medium-image {
-    max-width: 100%;
-  }
-
-  .media-container {
-    flex-direction: column;
-  }
-
-  .video-container {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-/* Existing styles for subscription box and popup */
+/* Subscription box and popup */
 .subscription-box {
   background-color: #e0e0e0;
   border: 2px solid #000000;
@@ -182,13 +169,15 @@ video {
   cursor: pointer;
 }
 
+/* Table styles */
 .meal-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-.meal-table th, .meal-table td {
+.meal-table th,
+.meal-table td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
@@ -203,6 +192,7 @@ video {
   background-color: #f9f9f9;
 }
 
+/* Image container */
 .image-container {
   width: 100%;
   max-width: 600px;
@@ -215,14 +205,18 @@ video {
   display: block;
 }
 
-.medium-image {
-  max-width: 60%;
-  height: auto;
-  display: block;
-}
-
+/* Media queries */
 @media (max-width: 768px) {
   .medium-image {
-      max-width: 100%;
+    max-width: 100%;
+  }
+
+  .media-container {
+    flex-direction: column;
+  }
+
+  .video-container {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
