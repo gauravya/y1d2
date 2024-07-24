@@ -194,16 +194,18 @@ video,
 
 /* Image container */
 .image-container {
-  width: 100%;
-  max-width: 600px;
+  max-width: 300px; 
+  margin: 20px auto;
   text-align: center;
 }
 
 .image-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
+
 
 /* Media queries */
 @media (max-width: 768px) {
@@ -216,7 +218,14 @@ video,
   }
 
   .video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.video-container iframe {
     width: 100%;
-    margin-bottom: 20px;
-  }
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
 }
