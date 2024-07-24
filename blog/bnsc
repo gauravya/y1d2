@@ -66,8 +66,8 @@
         <h2>Northern Soul Phenomenon</h2>
         <div class="date">2024-07-24</div>
 
-        <div class="image-container">
-          <img src="/images/bnsc/bnsc.png" alt="Bristol Northern Soul Club" />
+        <div style="text-align: center;">
+          <img src="/images/bnsc/bnsc.png" alt="Bristol Northern Soul Club" style="max-width: 100%; height: auto;">
         </div>
 
         <p>
