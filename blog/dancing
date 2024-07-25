@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dancing in a Bar</title>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <meta
+      name="description"
+      content="Within a space of ten by ten,
+      You can dance solo or bring a friend.
+      Throw shapes and moves with all your might,
+      From swing to waltz, your steps can be right.
+      Break dance or hip hop, give it a shot,
+      In this square, you've got the perfect spot."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Dancing in a Bar" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://www.y1d2.com/images/abcd.png" />
+    <meta property="og:url" content="https://www.y1d2.com/blog/dancing" />
+    <meta
+      property="og:description"
+      content="Within a space of ten by ten,
+      You can dance solo or bring a friend.
+      Throw shapes and moves with all your might,
+      From swing to waltz, your steps can be right.
+      Break dance or hip hop, give it a shot,
+      In this square, you've got the perfect spot."
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Gaurav Yadav</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/calling">Calling</a>
+      </nav>
+    </header>
+
+    <div class="substack-reference">I am Glad We Disagree</div>
+
+    <main>
+      <article>
+        <h2>Dancing in a Bar</h2>
+        <div class="date">2024-07-25</div>
+
+        <p>Within a space of ten by ten,</p>
+        <p>You can dance solo or bring a friend.</p>
+        <p>Throw shapes and moves with all your might,</p>
+        <p>From swing to waltz, your steps can be right.</p>
+        <p>Break dance or hip hop, give it a shot,</p>
+        <p>In this square, you've got the perfect spot.</p>
+        <br />
+
+        <p>Though if you're aiming to groove across the floor,</p>
+        <p>A ten-by-ten just leaves you wanting more.</p>
+        <p>If setting the mood is your goal,</p>
+        <p>That square footage might cramp your soul.</p>
+        <br />
+
+        <p>But hey, not every day is your day.</p>
+        <p>Sometimes you're stuck in a bar,</p>
+        <p>Tunes are blaring from afar and you're ready to start.</p>
+        <p>Might as well make the most of this night.</p>
+        <p>That 10x10's shrunk, the space isn't right.</p>
+        <p>But your body's ready to move with all its might.</p>
+        <br />
+
+        <p>The eyes watch you as you go,</p>
+        <p>They wonder at your rhythm and flow.</p>
+        <p>They think you're trained, a dancing pro,</p>
+        <p>But you're just having fun, letting it show.</p>
+        <p>No need for fancy shoes or technique,</p>
+        <p>When your moves make the floor unique.</p>
+        <br />
+
+        <p>Then it's time to head on out,</p>
+        <p>Sweat-soaked from your dancing bout.</p>
+        <p>Some ask for your number, some just stare,</p>
+        <p>Your moves have left them all aware.</p>
+        <p>But as the night fades, doubts creep in,</p>
+        <p>"Do I dance for me or them?" you wonder within.</p>
+      </article>
+
+      <div style="text-align: center">
+        <img src="/images/abcd.png" style="max-width: 50%; height: auto" />
+      </div>
+    </main>
+
+    <footer>
+      <p style="color: #666">
+        Older posts can be viewed on
+        <a href="https://iamgladwedisagree.substack.com">Substack</a>
+      </p>
+    </footer>
+  </body>
+</html>
