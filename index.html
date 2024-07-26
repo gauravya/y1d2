@@ -19,33 +19,32 @@
 
     <div class="subscription-box">
       <p>If you're keen to receive posts in your email:</p>
-      <button id="subscribeBtn">Subscribe</button>
-    </div>
-
-    <div id="subscribePopup" class="popup">
-      <div class="popup-content">
-        <span class="close">&times;</span>
-        <iframe
-          src="https://iamgladwedisagree.substack.com/embed"
-          width="100%"
-          height="320"
-          style="border: 1px solid #eee; background: white"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
+      <form id="subscribeForm" action="https://formspree.io/f/xvgporyz" method="POST">
+        <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="subscribeMessage"></div>
     </div>
 
     <main>
       <article>
         <h2><a href="/blog/dancing">Dancing in a Bar</a></h2>
         <div class="date">2024-07-25</div>
-        <p>Within a space of ten by ten,</p>
-        <p>You can dance solo or bring a friend.</p>
-        <p>Throw shapes and moves with all your might,</p>
-        <p>From swing to waltz, your steps can be right.</p>
-        <p>Break dance or hip hop, give it a shot,</p>
-        <p>In this square, you've got the perfect spot.</p>
+        <p>
+          Within a space of ten by ten,<br />
+          You can dance solo or bring a friend.<br />
+          Throw shapes and moves with all your might,<br />
+          From swing to waltz, your steps can be right.<br />
+          Break dance or hip hop, give it a shot,<br />
+          In this square, you've got the perfect spot.
+        </p>
+
+        <p>
+          Though if you're aiming to groove across the floor,<br />
+          A ten-by-ten just leaves you wanting more.<br />
+          If setting the mood is your goal,<br />
+          That square footage might cramp your soul.
+        </p>
         <p><a href="/blog/dancing">more...</a></p>
       </article>
 
