@@ -16,15 +16,18 @@
     </header>
 
     <div class="substack-reference">I am Glad We Disagree</div>
-    <div class="subscription-box">
-      <p>If you're keen to receive posts in your email:</p>
-      <form id="subscribeForm" action="https://formspree.io/f/xvgporyz" method="POST">
-        <input type="text" name="name" id="nameInput" placeholder="Name" required>
-        <input type="email" name="email" id="emailInput" placeholder="Email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-      <div id="subscribeMessage"></div>
-    </div>
+<div id="subscribePopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <iframe
+          src="https://iamgladwedisagree.substack.com/embed"
+          width="100%"
+          height="320"
+          style="border: 1px solid #eee; background: white"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+       </div>
     <main>
       <article>
         <h2><a href="/blog/dancing">Dancing in a Bar</a></h2>
