@@ -110,12 +110,13 @@
       </div>
     </main>
 
+
     <footer>
       <p style="color: #666">
-        Older posts can be viewed on
-        <a href="https://iamgladwedisagree.substack.com">Substack</a>
+          <a href="/all">See all posts</a>
       </p>
     </footer>
+    
     <script src="/scripts.js"></script>
   </body>
 </html>

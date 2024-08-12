@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Blog Posts - Gaurav Yadav</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Gaurav Yadav</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/calling">Calling</a> 
+        </nav>
+    </header>
+
+    <div class="substack-reference">I am Glad We Disagree</div>
+
+    <main class="all-posts">
+        <h2>All Blog Posts</h2>
+        
+        <ul>
+            <li>
+                <a href="/blog/cultfrisbee">
+                    <div class="title">CultFrisbee</div>
+                    <div class="date">2024-08-11</div>
+                </a>
+            </li>
+            <li>
+                <a href="/blog/dancing">
+                    <div class="title">Dancing in a Bar</div>
+                    <div class="date">2024-07-25</div>
+                </a>
+            </li>
+            <li>
+                <a href="/blog/backpacking">
+                    <div class="title">Vegan Backpacking</div>
+                    <div class="date">2024-07-16</div>
+                </a>
+            </li>
+            <li>
+                <a href="/blog/stegastomp">
+                    <div class="title">Stegastomp 2024</div>
+                    <div class="date">2024-07-03</div>
+                </a>
+            </li>
+            <li>
+                <a href="/blog/death">
+                    <div class="title">Death</div>
+                    <div class="date">2024-05-24</div>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    </footer>
+    <script src="/scripts.js"></script>
+</body>
+</html>
