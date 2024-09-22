@@ -200,7 +200,7 @@ video,
 
 .dance-table th,
 .dance-table td {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(0, 0, 0);
   padding: 8px;
   text-align: left;
 }
