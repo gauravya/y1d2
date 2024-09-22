@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleepless at Pinewoods</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1>Sleepless at Pinewoods</h1>
+    <p><strong>Formation:</strong> Duple Improper</p>
+    <table class="dance-table">
+      <thead>
+        <tr>
+          <th>Part</th>
+          <th>Counts</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A1</td>
+          <td>16</td>
+          <td>R&L Grand four places: Right to neighbor, left to #2, right to #3, allemande left #4; return; right to #3, left to #2.</td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>16</td>
+          <td>Neighbor Balance and Swing</td>
+        </tr>
+        <tr>
+          <td>B1</td>
+          <td>6</td>
+          <td>Circle left 3 places (3/4)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>10</td>
+          <td>Partner Swing</td>
+        </tr>
+        <tr>
+          <td>B2</td>
+          <td>8</td>
+          <td>Right-hand Chain</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>8</td>
+          <td>Left hand star turn all the way on to the next</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Note:</strong> The Allemande Left takes a little while.</p>
+  </body>
+</html>
