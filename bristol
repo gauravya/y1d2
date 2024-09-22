@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bristol Contra</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bristol Contra Dances</h1>
+    <ul>
+      <li><a href="y1d2.com/calls/sleepless">Dance 1: Sleepless at Pinewoods</a></li>
+      <li><a href="y1d2.com/calls/valerie">Dance 2: Valerie's New Trip to Portland</a></li>
+      <li><a href="y1d2.com/calls/firth">Dance 3: Firth of Forth</a></li>
+    </ul>
+  </body>
+</html>

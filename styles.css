@@ -192,6 +192,28 @@ video,
   background-color: #f9f9f9;
 }
 
+.dance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.dance-table th,
+.dance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dance-table th {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+.dance-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
 /* Image container */
 .image-container {
   margin: 20px auto;
