@@ -28,10 +28,11 @@
 
   <body>
     <header>
-      <h1>Gaurav Yadav</h1>
+      <h1>Guarav Yadav</h1>
       <nav>
         <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/calling">Calling</a> |
+        <a href="/life.html">Photos</a>
       </nav>
     </header>
 
