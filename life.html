@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gaurav Yadav</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/calling">Calling</a> |
+        <a href="/life">Photos</a> 
+      </nav>
+    </header>
+
+    <div id="photoGrid" class="photo-grid"></div>
+
+        
+    <script>
+    const photoGrid = document.getElementById('photoGrid');
+    const baseUrl = '/photos/';
+    const photoData = [
+        { filename: 'tom.jpg', title: 'Tom', pageUrl: 'photos/tom.html' },
+        // Add more photo data here
+    ];
+
+    function createPhotoItem(photo) {
+        const photoItem = document.createElement('div');
+        photoItem.className = 'photo-item';
+        
+        const img = document.createElement('img');
+        img.src = baseUrl + photo.filename;
+        img.alt = photo.title;
+        img.loading = 'lazy';
+        
+        img.onerror = () => {
+            console.error(`Failed to load image: ${photo.filename}`);
+            photoItem.remove();
+        };
+        
+        img.onclick = () => {
+            window.location.href = photo.pageUrl;
+        };
+        
+        photoItem.appendChild(img);
+        return photoItem;
+    }
+
+    function loadPhotos() {
+        photoData.forEach(photo => {
+            const photoItem = createPhotoItem(photo);
+            photoGrid.appendChild(photoItem);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadPhotos);
+</script>
+    </body>
+    </html>        

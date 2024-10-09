@@ -227,6 +227,18 @@ video,
   margin: 0 auto;
 }
 
+.photos-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.photos-container img {
+  width: 100%;
+  height: auto;
+}
+.photo-description {
+  margin-top: 20px;
+}
+
 
 /* Media queries */
 @media (max-width: 768px) {
@@ -274,4 +286,23 @@ video,
 .all-posts .date {
   color: #666;
   font-size: 0.9em;
+}
+
+/* Photos */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+.photo-item img {
+  width: 40%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.photo-item img:hover {
+  transform: scale(1.05);
 }
