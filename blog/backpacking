@@ -6,15 +6,13 @@
   </head>
   <body>
     <header>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <h1>Gaurav Yadav</h1>
-      <link rel="stylesheet" href="/styles.css">
       <nav>
         <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/calling">Calling</a> |
+        <a href="/life.html">Photos</a>
       </nav>
     </header>
-
     <div class="substack-reference">I am Glad We Disagree</div>
 
     <main>

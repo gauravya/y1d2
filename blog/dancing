@@ -37,26 +37,11 @@
       <h1>Gaurav Yadav</h1>
       <nav>
         <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/calling">Calling</a> |
+        <a href="/life.html">Photos</a>
       </nav>
-      
-      <div id="subscribePopup" class="popup">
-        <div class="popup-content">
-          <span class="close">&times;</span>
-          <iframe
-            src="https://iamgladwedisagree.substack.com/embed"
-            width="100%"
-            height="320"
-            style="border: 1px solid #eee; background: white"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
-        </div>
-      </div>
-</div>
-
-    <div class="substack-reference">I am Glad We Disagree</div>
-
+    </header>
+    
     <main>
       <article>
         <h2>Dancing in a Bar</h2>

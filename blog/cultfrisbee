@@ -27,13 +27,13 @@
 
   <body>
     <header>
-      <h1>Gaurav Yadav</h1>
+      <h1>G-man</h1>
       <nav>
         <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/calling">Calling</a> |
+        <a href="/life.html">Photos</a>
       </nav>
     </header>
-
     <main>
       <article>
         <h2>CultFrisbee</h2>
