@@ -38,10 +38,10 @@
       <nav>
         <a href="/">Home</a> |
         <a href="/calling">Calling</a> |
-        <a href="/life.html">Photos</a>
+        <a href="/life">Photos</a>
       </nav>
     </header>
-    
+
     <main>
       <article>
         <h2>Dancing in a Bar</h2>
