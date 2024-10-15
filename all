@@ -22,6 +22,12 @@
         
         <ul>
             <li>
+                <a href="/blog/bike">
+                    <div class="title">I learnt to ride a bike</div>
+                    <div class="date">2024-10-13</div>
+                </a>
+            </li>
+            <li>
                 <a href="/blog/gaurav">
                     <div class="title">How to Pronounce My Name</div>
                     <div class="date">2024-09-01</div>
