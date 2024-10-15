@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav Yadav - October 9, 2024</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gaurav Yadav</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/calling">Calling</a> |
+        <a href="/life.html">Photos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>October 10, 2024</h2>
+      <div class="photos-container">
+        <img src="/images/oct1024/irn.jpg">
+        <div class="photos-description">
+          <p>
+            The leaves are falling. 
+            So are the Irn-Brus.
+        </p>
+        </div>
+        
+        <img src="/images/oct1024/shoe.jpg">
+        <div class="photos-description">
+          <p>
+            I didn't think I would find anything interesting on this walk. 
+            To my surprise, I found a shoe on top of a bin. 
+            Hopefully, whoever lost it will find it, thanks to its elegant display. 
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

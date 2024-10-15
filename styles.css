@@ -291,6 +291,12 @@ video,
 }
 }
 
+.video-container-a {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
 /* Styles for All Posts page */
 
 .all-posts ul {
