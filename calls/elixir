@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Time Elixir #2</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1>Old Time Elixir #2</h1>
+    <p><strong>Written by:</strong> Linda Leslie</p>
+    <p><strong>Formation:</strong> Becket (Slide left to progress)</p>
+    <table class="dance-table">
+      <thead>
+        <tr>
+          <th>Part</th>
+          <th>Counts</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A1</td>
+          <td>8</td>
+          <td>Slide left, circle left 3/4</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>8</td>
+          <td>Neighbor Swing</td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>8</td>
+          <td>Face across, R and L through</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>8</td>
+          <td>Right hand chain on back</td>
+        </tr>
+        <tr>
+          <td>B1</td>
+          <td>16</td>
+          <td>Petronella (x2)</td>
+        </tr>
+        <tr>
+          <td>B2</td>
+          <td>16</td>
+          <td>Partner Balance and Swing</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+        R/L through explaination: You are facing your partner, give right hands to them. Pull by, and drop hands with them. You should see your neighbour that just swung
+        coming with you. Give left hands to them, and courtousy turn them, rotating in an anti-clockwise direction. 
+    </p>
+  </body>
+</html>
