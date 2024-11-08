@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aioli</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1>Aioli</h1>
+    <p><strong>Written by:</strong> Will Mentor</p>
+    <p><strong>Formation:</strong> Becket</p>
+    <table class="dance-table">
+      <thead>
+        <tr>
+          <th>Part</th>
+          <th>Counts</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A1</td>
+          <td>2</td>
+          <td>Slide left</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>4</td>
+          <td>Those on the left, cross by right shoulder to your neightbour</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>10</td>
+          <td>Neighbor swing</td>
+        </tr>
+        <tr>
+          <td>A2</td>
+          <td>8</td>
+          <td>In long lines, go forward and back</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>2</td>
+          <td>On the left, pull by left</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>6</td>
+          <td>Partner allemande right once</td>
+        </tr>
+        <tr>
+          <td>B1</td>
+          <td>16</td>
+          <td>Full Hey (those on the left begin that hey, meet in the middle pass by left, at the ends pass by right shoulder)</td>
+        </tr>
+        <tr>
+          <td>B2</td>
+          <td>4</td>
+          <td>Partner balance</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>12</td>
+          <td>Partner swing</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
