@@ -9,7 +9,7 @@
   <body>
     <h1>United We Dance</h1>
     <p><strong>Written by:</strong> Bob Isaacs</p>
-    <p><strong>Formation:</strong> Improper, start in long wavy lines (Gents facing out, ladies in, looking at their partner's back, across the set)</p>
+    <p><strong>Formation:</strong> Start in long wavy lines across the set (give right hands to your neighbor across, left hands to the others)</p>
     <table class="dance-table">
       <thead>
         <tr>
@@ -21,13 +21,23 @@
       <tbody>
         <tr>
           <td>A1</td>
-          <td>8</td>
-          <td>Rory O'More</td>
+          <td>4</td>
+          <td>In waves, balance right and left</td>
         </tr>
         <tr>
           <td></td>
-          <td>8</td>
-          <td>Rory O'More</td>
+          <td>4</td>
+          <td>Slide right one position</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>4</td>
+          <td>Balance left and right</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>4</td>
+          <td>Slide right one position</td>
         </tr>
         <tr>
           <td>A2</td>
@@ -47,17 +57,18 @@
         <tr>
           <td></td>
           <td>8</td>
-          <td>Swing partner</td>
+          <td>Partner swing</td>
         </tr>
         <tr>
           <td>B2</td>
           <td>8</td>
-          <td>Ladies chain</td>
+          <td>Right hand chain across</td>
         </tr>
         <tr>
           <td></td>
           <td>8</td>
-          <td>Left-hand star into long wavy lines between new and previous neighbors</td>
+          <td>Left hand star, blend to waves with new neighbors (keep left, give right)
+          </td>
         </tr>
       </tbody>
     </table>
