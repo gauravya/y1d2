@@ -22,6 +22,18 @@
         
         <ul>
             <li>
+                <a href="/blog/bsky">
+                    <div class="title">Bluesky</div>
+                    <div class="date">2024-11-19</div>
+                </a>
+            </li>
+            <li>
+                <a href="/blog/memory">
+                    <div class="title">Logging Life</div>
+                    <div class="date">2024-11-18</div>
+                </a>
+            </li>
+            <li>
                 <a href="/blog/ask">
                     <div class="title">Ask them Out</div>
                     <div class="date">2024-10-23</div>
