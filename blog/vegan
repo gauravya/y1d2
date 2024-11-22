@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Militant Vegan</title>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <meta
+      name="description"
+      content="A friend told me about militant vegans. How they make everyone feel bad from their moral high ground. I used to be one. With friends who thought the same, it was easy. I spent hours using philosophical jiu-jitsu to convert people."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Militant Vegan" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://www.y1d2.com/images/vegan.jpg" />
+    <meta property="og:url" content="https://www.y1d2.com/blog/vegan" />
+    <meta
+      property="og:description"
+      content="A friend told me about militant vegans. How they make everyone feel bad from their moral high ground. I used to be one. With friends who thought the same, it was easy. I spent hours using philosophical jiu-jitsu to convert people."
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Gaurav Yadav</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/calling">Calling</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Militant Vegan</h2>
+      <div class="date">2024-11-22</div>
+
+      <p>
+        A friend told me about militant vegans.
+        How they make everyone feel bad from their moral high ground.
+        I used to be one.
+        With friends who thought the same, it was easy.
+        I spent hours using philosophical jiu-jitsu to convert people.
+      </p>
+
+      <p>
+        Then I wondered - does this actually help?
+        Some googling and talking showed me the truth.
+        My veganism barely dents the system.
+        The factory farms keep running either way.
+        So I dropped the crusade.
+      </p>
+
+      <p>
+        I now pick up a new thesis.
+        Money makes animals' lives better more effectively than arguments do.
+        I used to think paying to offset guilt was cheating.
+        That you must live up to your principles directly.
+      </p>
+
+      <p>
+        But money can:
+        <ul>
+          <li><a href = "https://www.shrimpwelfareproject.org/donate">Get farmers to use stunners for shrimp (yes, shrimp!)</a></li>
+          <li><a href = "https://thehumaneleague.org/">Convince major food companies to use only cage-free eggs</a></li>
+          <li><a href="https://www.wildanimalinitiative.org/">Fund research to reduce wild animal suffering</a></li>
+        </ul>
+      </p>
+
+      <p>
+        That's living up to principles too.
+        So no, I don't want you to become vegan.
+        But if you can afford it, consider giving to charities that <a href = "https://www.givingwhatwecan.org/charity-comparisons">efficiently</a> improve animals' lives.
+      </p>
+
+      <div style="text-align: center">
+        <img src="/images/vegan.jpg" style="max-width: 100%; height: auto" alt="Militant vegan" />
+      </div>
+    </main>
+
+    Comment on:
+    <a href="https://iamgladwedisagree.substack.com/p/militant-vegan">Substack</a> |
+    <a href="https://www.facebook.com/">Facebook</a>
+  </body>
+</html>

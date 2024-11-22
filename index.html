@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaurav Yadav</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Gaurav Yadav</h1>
-      <nav>
-        <a href="/">Home</a> |
-        <a href="/calling">Calling</a> |
-        <a href="/life">Photos</a> 
-      </nav>
-    </header>
-
-    <div class="substack-reference">I am Glad We Disagree</div>
-
-    <div class="subscription-box">
-      <p>If you're keen to receive posts in your email:</p>
-      <button id="subscribeBtn">Subscribe</button>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Gaurav Yadav
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Gaurav Yadav
+   </h1>
+   <nav>
+    <a href="/">
+     Home
+    </a>
+    |
+    <a href="calling">
+     Calling
+    </a>
+   </nav>
+  </header>
+  <p class="substack-reference">
+   I am Glad We Disagree
+  </p>
+  <section class="subscription-box">
+   <p>
+    If you're keen to receive posts in your email:
+   </p>
+   <button id="subscribeBtn">
+    Subscribe
+   </button>
+  </section>
+  <div class="popup" id="subscribePopup">
+   <div class="popup-content">
+    <span class="close">
+     ×
+    </span>
+    <iframe height="320" loading="lazy" src="https://iamgladwedisagree.substack.com/embed" style="border:1px solid #eee;background:#fff" width="100%">
+    </iframe>
+   </div>
+  </div>
+  <main>
+   <article>
+    <h2>
+     <a href="/blog/vegan">
+      Militant Vegan
+     </a>
+    </h2>
+    <div class="date">
+     2024-11-22
     </div>
+    <p>
+     A friend told me about militant vegans.
+        How they make everyone feel bad from their moral high ground.
+        I used to be one.
+        With friends who thought the same, it was easy.
+        I spent hours using philosophical jiu-jitsu to convert people.
+    </p>
+    <p>
+     Then I wondered - does this actually help?
+        Some googling and talking showed me the truth.
+        My veganism barely dents the system.
+        The factory farms keep running either way.
+        So I dropped the crusade.
+    </p>
+    <p>
+     <a href="/blog/vegan">
+      more...
+     </a>
+    </p>
+   </article>
 
-    <div id="subscribePopup" class="popup">
-      <div class="popup-content">
-        <span class="close">&times;</span>
-        <iframe
-          src="https://iamgladwedisagree.substack.com/embed"
-          width="100%"
-          height="320"
-          style="border: 1px solid #eee; background: white"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
+
+   <article>
+    <h2>
+     <a href="/blog/bsky">
+      Bluesky
+     </a>
+    </h2>
+    <div class="date">
+     2024-11-19
     </div>
-    
-    <main>
-
-      <article>
-        <h2><a href="/blog/bsky">Bluesky</a></h2>
-        <div class="date">2024-11-19</div> 
-          <p>
-            Some days, Tom speaks about fighting battles we know we'll lose.
+    <p>
+     Some days, Tom speaks about fighting battles we know we'll lose.
             Like his quest to end all suffering in our world, human and non-human alike.
             We lose this battle every single day, he and I.
             Yet we keep fighting, because we must.
-            </p>    
-
-            <p>
-              Another battle worth fighting is against life's suboptimal parts.
+    </p>
+    <p>
+     Another battle worth fighting is against life's suboptimal parts.
               And oh, how suboptimal the internet has become.
               The endless ads, mind-numbing short-form content, waves of misinformation - it's exhausting.
               I dream of a more wholesome internet.
@@ -58,83 +99,41 @@
               Where disagreements with strangers can unfold with nuance and empathy.
               This version of the internet - this is worth fighting for.
               And so I joined Bluesky.
-              </p>
-              <p><a href="/blog/bsky">more...</a></p>
-      </article>
-
-      <article>
-        <h2><a href="/blog/memory">Logging Life</a></h2>
-        <div class ="date">2024-11-18</div>
-          <p>
-          Friends are sharing more writing online these days.
+    </p>
+    <p>
+     <a href="/blog/bsky">
+      more...
+     </a>
+    </p>
+   </article>
+   <article>
+    <h2>
+     <a href="/blog/memory">
+      Logging Life
+     </a>
+    </h2>
+    <div class="date">
+     2024-11-18
+    </div>
+    <p>
+     Friends are sharing more writing online these days.
           This brings me joy - I fully support them putting their words into the world.
           Reading about their lives feels like keeping them close, since I rarely see a lot of them anymore.
           This has me reflecting on my own internet writing habits.
-          </p>
-          
-          <p>
-          At seventeen, I launched my first blog called "Keeping Pace." 
+    </p>
+    <p>
+     At seventeen, I launched my first blog called "Keeping Pace." 
           I gave it the tagline: "Helping your life become 1% better."
           How ambitious of me!
           My anxious teenage mind found comfort in self-help books.
-          I started echoing those ideas to other seventeen-year-olds.</p>
-
-        <p><a href="/blog/memory">more...</a></p>
-      </article>
-      
-    <article>
-        <h2><a href="/blog/ask">Ask them out</a></h2>
-        <div class ="date">2024-10-23</div>
-        <p>Dear Arjun,</p>
-
-        <p>
-          Congratulations on surviving your first month of university. Few more to go now. 
-          Here's some, perhaps 'cliché' advice for you.
-        </p>
-
-        <p>
-          For a long time, I repressed a lot of my sexuality. Mostly out of fear. 
-          Sometimes out of confusion.
-        </p>
-        <p><a href="/blog/ask">more...</a></p>
-      </article>
-      
-      <article>
-        <h2><a href="/blog/bike">I learnt to ride a bike</a></h2>
-        <div class="date">2024-10-13</div>
-          <p> I did it!
-            I learnt how to balance on a bike.
-            It has taken many decades to get here.
-            Two in fact.</p>
-            
-            <p> My father had long tried to get me to ride a bike.
-            But I was too afraid to fall.
-            I would ask for assisted wheels on either side to help me stay balanced.
-            The bike shops we went to would look at us funny.
-            'Why does this teenager need assisted wheels?'
-            They would say. 
-            I gave up hope on ever learning to ride a bike as a kid.
-            Who cares anyways?
-            I can use my feet.</p>
-            <p><a href="/blog/bike">more...</a></p>
-      </article>
-
-      <article>
-        <h2><a href="/blog/gaurav">How to Pronounce My Name</a></h2>
-        <div class="date">2024-09-01</div>
-        <p>
-          Gaurav isn’t the name I was born with. I began to dislike my original
-          name, so I decided to adopt my father’s first name. But that doesn’t
-          make me Gaurav Yadav Jr.; it just means both my dad and I are Gaurav
-          Yadav. What a treat!
-        </p>
-        <p><a href="/blog/name">more...</a></p>
-      </article>
-
-      <p style="color: #666">
-        <a href="/all">See all posts</a>
-      </p>
-
-    <script src="/scripts.js"></script>
-  </body>
+          I started echoing those ideas to other seventeen-year-olds.
+    </p>
+    <p>
+     <a href="/blog/memory">
+      more...
+     </a>
+    </p>
+   </article>
+  </main>
+ </body>
 </html>
