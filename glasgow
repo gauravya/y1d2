@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glasgow</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Gaurav Yadav</h1>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/calling">Calling</a> 
+      </nav>
+    </header>
+
+    <div class="substack-reference">I am Glad We Disagree</div>
+
+    <main>
+      <article>
+        <h2>Glasgow</h2>
+        <div class="date">2024-12-02</div>
+
+        <h2>The Leaving of Bristol</h2>
+
+        <blockquote>"Fare thee well to you, my own true love. There were many fare thee wells. 
+          I am bound for <del>California</del> Glasgow. A place that I know right well."</blockquote>
+
+        <p>
+          I have now lived in Glasgow for four months.
+          Through an unexpected stroke of fortune, Tom offered me a room in his Glasgow flat when I had nowhere else to go.
+          I sorted my life into what would fit in a few bags, leaving behind cherished possessions like my heated air dryer.
+          My last day in Bristol was spent dancing.
+          There is a swing dancing night called "Ain't Misbehavin'."
+          It felt like a fitting way to end things.
+          I felt at home with the dancing community in Bristol, and it was perhaps my last chance to enjoy it.
+          On my way back from the night, I was chatting to someone who grew up in Edinburgh and was giving me the lowdown on Glasgow.
+          "It's got a good music scene. Watch out for the stabbings though," they said with a half-smile.
+          Having moved out of my place, I returned to my friend's couch sometime after 1 AM.
+          It felt like an emotionally significant moment in my life.
+          I did not sleep; instead, I wandered around the very quiet streets near my alma mater.
+          Taking it all in.
+          Drinking from an endless vase.
+          Never quite satisfied.
+          A coach at 7 AM took me to Scotland that same day.
+        </p>
+
+        <h2>The City</h2>
+
+        <p>
+          I had visited Glasgow once before, in the summer of 2023, and took quite a dislike to it.
+          On that grey afternoon, I visited the Cathedral to meditate but hardly explored beyond that.
+          Everything seemed drab.
+          I couldn't have predicted then that a year later, I'd not only return, but see this city so differently.
+        </p>
+
+        <p>
+          Glasgow spreads wider than I'd imagined, each area distinct.
+          The West has a classy aesthetic to it.
+          The North feels rougher, with gentrification creeping in at its edges.
+          The South has more of an alternative scene to it.
+          The East feels much like the North, though I've seen little of it myself.
+        </p>
+
+        <p>
+          The West End unfolds with its big parks, a botanical garden and a massive art museum.
+          Byres Road hums with life, its colorful shops lining the street.
+          A Vietnamese place makes its own tofu from scratch each day.
+          A library stands, slightly grey and depressing.
+          An independent art show where I found the nicest pen in the world.
+          Walk ahead to Kelvingrove Park, where I learned to ride a bike.
+          Next to it stands the Kelvingrove Museum, where a friend and I pondered our lives while noticing the traffic cones perched on every statue's head.        </p>
+        
+        <p>
+          The Southside welcomes you with Pollok Park, where you feel like you've escaped into the countryside.
+          Within lie highland cows and another art collection, the Burrell House.
+          Burrell wanted the collection to be 14 miles from Glasgow's centre, fearing the city's pollution and smog.
+          I wonder how he feels about 3 miles.
+          From Queens Park's hills, you'll find the most magnificent view of Glasgow.
+          Below, bakeries display their goods in windows, drawing eyes from every direction.
+        </p>
+      
+        <p>
+          When you are in the nice parts of Glasgow, the city is beautiful.
+          It has such nice warm tones to it.
+          Of course, it helps when the sun shines.
+          The city centre has a grid pattern similar to the States.
+          When I was in Berkeley, I found it eerie that you could look down a street and it would go on for miles.
+          A somewhat similar phenomenon exists here.
+        </p>
+
+        <h2>The Glasweigan experience</h2>
+
+        <p>
+          I feel like Glasgow has changed me a lot.
+          Maybe it's leaving university, or maybe it's the city itself.
+          I suspect it's more the former.
+          My university life buzzed with constant noise.
+          The comedown has brought both peace and discomfort.
+          From this mixture comes learning.
+          Community feels like a very big deal to me now.
+          I want to live somewhere where local connections matter, not in any exclusionary way.
+          Maybe I'm imagining something like a commune.
+          I picture raising children with flatmates nearby.
+          A place where asking for help is natural.
+          Where apartment blocks host events that bring neighbors together.
+          Where life moves at a gentler pace.
+        </p>
+
+        <p>
+          Glasgow is my first true adult city - no university safety net here.
+          Gone are the days of spontaneous hill climbs, afternoon jam sessions, and dawn walks.
+          You meet plenty of people, but friendship takes more effort now.
+          Converting casual connections into real ones feels like pushing against a tide.
+          The dance scene and improv have been my lifelines, hobbies that ward off isolation.
+          Not everyone gets so lucky finding their communities.
+        </p>
+
+        <p>
+          Yet I'm drawn to keep moving.
+          Settling will come later.
+          For now, diving deep into a city and then seeking the next feels right.
+          A friend once told me, "people find what they're looking for in Bristol, and suddenly twenty years pass."
+          But Glasgow, unexpected as it was, has shaped me.
+          What other cities might teach me?
+          Where to next, I wonder?
+        </p>
+
+        
+      <div style="text-align: center">
+        <img src="/images/pollok.jpg" style="max-width: 100%; height: auto" />
+      </div>
+    </main>
+
+  </body>
+
