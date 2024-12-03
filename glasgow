@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glasgow</title>
     <link rel="stylesheet" href="/styles.css">
+    <meta property="og:title" content="Glasgow" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:image"
+      content="https://www.y1d2.com/images/pollok.JPG"
+    />
+    <meta property="og:url" content="https://www.y1d2.com/glasgow" />
   </head>
   <body>
     <header>
@@ -19,7 +26,7 @@
     <main>
       <article>
         <h2>Glasgow</h2>
-        <div class="date">2024-12-02</div>
+        <div class="date">2024-12-03</div>
 
         <h2>The Leaving of Bristol</h2>
 
@@ -28,15 +35,14 @@
 
         <p>
           I have now lived in Glasgow for four months.
-          Through an unexpected stroke of fortune, Tom offered me a room in his Glasgow flat when I had nowhere else to go.
+          Through an unexpected stroke of fortune, Tom offered me a room in his flat when I had nowhere else to go.
           I sorted my life into what would fit in a few bags, leaving behind cherished possessions like my heated air dryer.
-          My last day in Bristol was spent dancing.
-          There is a swing dancing night called "Ain't Misbehavin'."
+          My last day in Bristol was spent at a swing dancing night called "Ain't Misbehavin'."
           It felt like a fitting way to end things.
           I felt at home with the dancing community in Bristol, and it was perhaps my last chance to enjoy it.
           On my way back from the night, I was chatting to someone who grew up in Edinburgh and was giving me the lowdown on Glasgow.
           "It's got a good music scene. Watch out for the stabbings though," they said with a half-smile.
-          Having moved out of my place, I returned to my friend's couch sometime after 1 AM.
+          Having moved out of my place, I returned to my friend's bed sometime after 1 AM.
           It felt like an emotionally significant moment in my life.
           I did not sleep; instead, I wandered around the very quiet streets near my alma mater.
           Taking it all in.
@@ -51,7 +57,7 @@
           I had visited Glasgow once before, in the summer of 2023, and took quite a dislike to it.
           On that grey afternoon, I visited the Cathedral to meditate but hardly explored beyond that.
           Everything seemed drab.
-          I couldn't have predicted then that a year later, I'd not only return, but see this city so differently.
+          I couldn't have predicted then that a year later, I'd not only return to live here, but see this city so differently.
         </p>
 
         <p>
@@ -67,10 +73,10 @@
           Byres Road hums with life, its colorful shops lining the street.
           A Vietnamese place makes its own tofu from scratch each day.
           A library stands, slightly grey and depressing.
-          An independent art show where I found the nicest pen in the world.
-          Walk ahead to Kelvingrove Park, where I learned to ride a bike.
-          Next to it stands the Kelvingrove Museum, where a friend and I pondered our lives while noticing the traffic cones perched on every statue's head.        </p>
-        
+          An independent art shop where I found the nicest pen in the world.
+          Walk ahead to Kelvingrove Park - where I learned to ride a bike, and where traffic-crowned statues watched as a friend and I pondered our lives.
+        </p>
+
         <p>
           The Southside welcomes you with Pollok Park, where you feel like you've escaped into the countryside.
           Within lie highland cows and another art collection, the Burrell House.
@@ -79,41 +85,80 @@
           From Queens Park's hills, you'll find the most magnificent view of Glasgow.
           Below, bakeries display their goods in windows, drawing eyes from every direction.
         </p>
-      
+    
         <p>
           When you are in the nice parts of Glasgow, the city is beautiful.
           It has such nice warm tones to it.
-          Of course, it helps when the sun shines.
-          The city centre has a grid pattern similar to the States.
-          When I was in Berkeley, I found it eerie that you could look down a street and it would go on for miles.
-          A somewhat similar phenomenon exists here.
+          You're not far away from green spaces.
+          I am one bus ride away from the start of the West Highland Way!
+        </p>
+
+        <p>
+          Glasgow has some quirks up its sleeve too:
+        </p>
+
+        <p>
+          The city centre follows a grid like American cities.
+          When I was in Berkeley, streets stretched endlessly ahead - eerily similar here.
+          Yet somehow the grid makes navigation more confusing, not less      
+        </p>
+                
+        <p>
+          The subway here is the 'smallest subway' in the world apparently.
+          Which I thought meant it didn't go very far.
+          But in fact, the carriages are quite short.
+          And yes, it still doesn't go very far.         
+          It travels in a circle visiting the popular parts of Glasgow.
+          You could sit on it all day and end up back in the same place.
+        </p>
+
+        <p>
+          Buses are free for under 22s!
+        </p>
+
+        <p>
+          The parkruns start at 9:30, not 9:00 like elsewhere.
+          They say it's timed for the late Scottish sunrise.
+          I appreciate that extra half hour of sleep.   
         </p>
 
         <h2>The Glasweigan experience</h2>
-
+        
         <p>
           I feel like Glasgow has changed me a lot.
           Maybe it's leaving university, or maybe it's the city itself.
-          I suspect it's more the former.
           My university life buzzed with constant noise.
           The comedown has brought both peace and discomfort.
-          From this mixture comes learning.
-          Community feels like a very big deal to me now.
-          I want to live somewhere where local connections matter, not in any exclusionary way.
-          Maybe I'm imagining something like a commune.
-          I picture raising children with flatmates nearby.
-          A place where asking for help is natural.
-          Where apartment blocks host events that bring neighbors together.
-          Where life moves at a gentler pace.
         </p>
 
         <p>
-          Glasgow is my first true adult city - no university safety net here.
+          Community feels like a very big deal to me now.
+          I want to live somewhere where local connections are taken seriously.
+          Maybe I'm imagining something like a commune.
+          I picture raising children with flatmates nearby.
+          Where apartment blocks host events that bring neighbors together.
+          Where life is about people.
+        </p>
+
+        <p>
+          Community was always around me in Bristol.
+          The Multifaith Chaplaincy became my second home.
+          From 11 AM to 3 PM you would very likely find me there on a weekday.
+          I spent hours debating theists but also just being with friends.
+          Writing an essay in the reading room, then walking out to people constantly joking and having fun.
+          The Chaplaincy was community and I miss it.
+          Of course, it was artificial - most of university is.
+          I'm still searching for ways to recreate that feeling in the real world.
+        </p>
+
+        <p>
+          In Glasgow, I've had to be properly adult for the first time.
           Gone are the days of spontaneous hill climbs, afternoon jam sessions, and dawn walks.
           You meet plenty of people, but friendship takes more effort now.
           Converting casual connections into real ones feels like pushing against a tide.
-          The dance scene and improv have been my lifelines, hobbies that ward off isolation.
-          Not everyone gets so lucky finding their communities.
+          Though I have been lucky. 
+          Some of the nicest people exist here in Glasgow, and I get to call them my friends.
+          I have been lucky to not be lonely.
         </p>
 
         <p>
@@ -128,7 +173,7 @@
 
         
       <div style="text-align: center">
-        <img src="/images/pollok.jpg" style="max-width: 100%; height: auto" />
+        <img src="/images/pollok.JPG" style="max-width: 100%; height: auto" />
       </div>
     </main>
 
