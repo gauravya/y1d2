@@ -25,7 +25,7 @@
 
     <main>
       <article>
-        <h2>Glasgow</h2>
+        <h2>Glazga!</h2>
         <div class="date">2024-12-03</div>
 
         <h2>The Leaving of Bristol</h2>
@@ -170,11 +170,13 @@
           What other cities might teach me?
           Where to next, I wonder?
         </p>
-
         
       <div style="text-align: center">
         <img src="/images/pollok.JPG" style="max-width: 100%; height: auto" />
       </div>
+
+      <p>Comment on: <a href="https://iamgladwedisagree.substack.com/p/glazga">Substack</a></p>
+
     </main>
 
   </body>
