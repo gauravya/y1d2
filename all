@@ -21,6 +21,12 @@
    <h2>All Blog Posts</h2>
    <ul>
     <li>
+        <a href="/kids">
+         <div class="title">Reflections on whether I should have kids</div>
+         <div class="date">2025-01-04</div>
+        </a>
+       </li>
+    <li>
         <a href="/glasgow">
          <div class="title">Glazga!</div>
          <div class="date">2024-12-03</div>
@@ -30,12 +36,6 @@
      <a href="/vegan">
       <div class="title">Militant Vegan</div>
       <div class="date">2024-11-22</div>
-     </a>
-    </li>
-    <li>
-     <a href="/bsky">
-      <div class="title">Bluesky</div>
-      <div class="date">2024-11-19</div>
      </a>
     </li>
     <li>

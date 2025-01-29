@@ -30,8 +30,7 @@
     <header>
       <h1>Guarav Yadav</h1>
       <nav>
-        <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/">Home</a> 
       </nav>
     </header>
 

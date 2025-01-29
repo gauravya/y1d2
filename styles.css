@@ -33,19 +33,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Tag styles */
-.tags {
-  margin-top: 5px;
-}
-
-.tag {
-  background-color: #f0f0f0;
-  padding: 2px 5px;
-  border-radius: 3px;
-  font-size: 0.8em;
-  margin-right: 5px;
-}
-
 /* Media styles */
 .blog-image,
 video,
@@ -192,27 +179,7 @@ video,
   background-color: #f9f9f9;
 }
 
-.dance-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.dance-table th,
-.dance-table td {
-  border: 1px solid rgb(0, 0, 0);
-  padding: 8px;
-  text-align: left;
-}
-
-.dance-table th {
-  background-color: #ffffff;
-  font-weight: bold;
-}
-
-.dance-table tr:nth-child(even) {
-  background-color: #ffffff;
-}
+/* Removed .dance-table and .photo-grid / .photo-item here as requested */
 
 /* Image container */
 .image-container {
@@ -282,13 +249,13 @@ video,
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
-}
+  }
 
-.video-container iframe {
+  .video-container iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     height: auto;
-}
+  }
 }
 
 .video-container-a {
@@ -298,7 +265,6 @@ video,
 }
 
 /* Styles for All Posts page */
-
 .all-posts ul {
   list-style-type: none;
   padding: 0;
@@ -321,29 +287,3 @@ video,
   color: #666;
   font-size: 0.9em;
 }
-
-/* Photos */
-
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
-  margin-top: 20px;
-}
-.photo-item img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.photo-item img:hover {
-  transform: scale(1.05);
-}
-
-.date-header {
-  grid-column: 1 / -1;
-  margin-top: 20px;
-  font-weight: bold;
-}
-

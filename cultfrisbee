@@ -29,8 +29,7 @@
     <header>
       <h1>G-man</h1>
       <nav>
-        <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/">Home</a>
       </nav>
     </header>
     <main>
