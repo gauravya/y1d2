@@ -23,10 +23,9 @@
 
   <body>
     <header>
-      <h1>Gaurav Yada</h1>
+      <h1>Gaura Yada</h1>
       <nav>
-        <a href="/">Home</a> |
-        <a href="/calling">Calling</a>
+        <a href="/">Home</a>
       </nav>
     </header>
 

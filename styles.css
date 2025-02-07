@@ -179,9 +179,6 @@ video,
   background-color: #f9f9f9;
 }
 
-/* Removed .dance-table and .photo-grid / .photo-item here as requested */
-
-/* Image container */
 .image-container {
   margin: 20px auto;
   text-align: center;
