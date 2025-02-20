@@ -20,6 +20,12 @@
    <h2>All Blog Posts</h2>
    <ul>
     <li>
+        <a href="/photographs">
+         <div class="title">Taking Photographs</div>
+         <div class="date">2025-02-20</div>
+        </a>
+       </li>
+    <li>
         <a href="/kids">
          <div class="title">Reflections on whether I should have kids</div>
          <div class="date">2025-01-04</div>
