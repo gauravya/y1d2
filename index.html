@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gaurav Yadav</title>
 
-    <!-- Type: editorial serif + light monospace (free alternatives to WIP’s stack) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://substackcdn.com" crossorigin />
@@ -34,7 +33,6 @@
         font-size: 17px;
       }
 
-      /* Links default to black; underline + blue on hover */
       a { color: var(--ink); text-decoration: none; }
       a:hover { color: var(--accent); text-decoration: underline; }
 
@@ -44,7 +42,6 @@
       header.site h1 { font-weight: 600; font-size: 28px; margin: 0 0 6px 0; letter-spacing: 0.2px; }
       .strap { font-family: var(--mono); color: var(--muted); font-size: 14px; }
 
-      /* Subscribe */
       .subscription-box { border: 1px solid var(--keyline); padding: 16px; margin: 22px 0 34px; background: #fff; text-align: center; }
       .subscription-box p { margin: 0 0 12px 0; font-family: var(--mono); font-size: 14px; color: var(--ink); }
       #subscribeBtn { appearance: none; background: transparent; border: 1px solid var(--keyline); padding: 8px 14px; font-family: var(--mono); font-size: 14px; cursor: pointer; color: var(--ink); }
@@ -53,7 +50,6 @@
       .popup-content { background: #fff; border: 1px solid var(--keyline); width: min(560px, 92vw); margin: 8vh auto 0; padding: 18px; }
       .close { float: right; font-family: var(--mono); cursor: pointer; }
 
-      /* Latest hero */
       .latest { margin: 18px 0 36px; }
       .latest-card { display: grid; grid-template-columns: 1.4fr 2fr; gap: 0; border: 1px solid var(--keyline); text-decoration: none; color: inherit; background: #fff; }
       .latest-card .media { border-right: 1px solid var(--keyline); }
@@ -64,7 +60,6 @@
       .lede { color: #333; margin: 0 0 10px 0; }
       .read { font-family: var(--mono); font-size: 13px; }
 
-      /* Cards grid (2 more posts) */
       .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
       .card { border: 1px solid var(--keyline); background: #fff; display: flex; flex-direction: column; }
       .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--keyline); }
@@ -73,6 +68,10 @@
       .card .meta { margin-top: 2px; }
       .card h3 a, .card h3 a:visited { color: var(--ink); }
       .card h3 a:hover { text-decoration: underline; }
+
+      .archive-card { border: 1px solid var(--keyline); background: #fff; padding: 14px; display: flex; align-items: center; justify-content: center; }
+      .archive-card a { font-family: var(--mono); font-size: 14px; color: var(--ink); }
+      .archive-card a:hover { color: var(--accent); text-decoration: underline; }
 
       footer { border-top: 1px solid var(--keyline); margin-top: 48px; padding-top: 16px; color: var(--muted); font-family: var(--mono); font-size: 13px; }
 
@@ -91,9 +90,8 @@
         <div class="strap">I am Glad We Disagree</div>
       </header>
 
-      <!-- Subscribe panel + modal (kept) -->
       <section class="subscription-box">
-        <p>If you’re keen to get new posts by email:</p>
+        <p>If you're keen to get new posts by email:</p>
         <button id="subscribeBtn">Subscribe</button>
       </section>
 
@@ -112,20 +110,27 @@
         </div>
       </div>
 
-      <!-- Static homepage (no fetch) -->
       <section class="latest" aria-label="Latest post">
-        <a class="latest-card" href="/bald">
-          <figure class="media"><img src="/images/bald1.jpg" alt="" loading="eager" decoding="async" /></figure>
+        <a class="latest-card" href="claire.html">
+          <figure class="media"><img src="/images/bright.png" alt="" loading="eager" decoding="async" /></figure>
           <div class="body">
-            <div class="meta"><time datetime="2025-09-24">24 Sept 2025</time></div>
-            <h2>To Be a Bald, Beautiful Barber</h2>
-            <p class="lede">You know what you got and then it's gone.</p>
+            <div class="meta"><time datetime="2025-10-07">7 Oct 2025</time></div>
+            <h2>My wife's name is Claire.</h2>
             <span class="read">Read →</span>
           </div>
         </a>
       </section>
 
       <section class="grid" aria-label="Recent posts">
+        <article class="card">
+          <a href="/bald"></a>
+          <div class="pad">
+            <div class="meta"><time datetime="2025-09-24">24 Sept 2025</time></div>
+            <h3><a href="/bald">To Be a Bald, Beautiful Barber</a></h3>
+            <p class="lede">You know what you got and then it's gone.</p>
+          </div>
+        </article>
+
         <article class="card">
           <a href="/robert"></a>
           <div class="pad">
@@ -140,16 +145,16 @@
           <div class="pad">
             <div class="meta"><time datetime="2025-08-28">28 Aug 2025</time></div>
             <h3><a href="/bugs">Not stepping on bugs</a></h3>
-            <p class="lede">I let a tooth rot for over a year.</p>
           </div>
         </article>
+
         <section class="archive-card" aria-label="Archive">
           <a href="https://news.y1d2.com/archive" target="_blank" rel="noopener">See the full archive on my Substack mirror →</a>
         </section>
+      </section>
     </div>
 
     <script>
-      // Subscribe modal only
       const btn = document.getElementById('subscribeBtn');
       const popup = document.getElementById('subscribePopup');
       const closeBtn = document.querySelector('.popup .close');
