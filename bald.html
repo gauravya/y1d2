@@ -4,72 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>To Be a Bald Barber</title>
-
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://substackcdn.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
-
-    <style>
-      :root {
-        --bg: #ffffff;
-        --ink: #111111;
-        --muted: #6a6a6a;
-        --accent: #1a5fb4; 
-        --keyline: #111111;
-        --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        --serif: 'Newsreader', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
-        --maxw: 760px;
-        --media-max: 320px;
-        --hero-max: 360px;
-      }
-      html, body { height: 100%; }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--ink);
-        font-family: var(--serif);
-        line-height: 1.65;
-        font-size: 18px;
-      }
-      a { color: var(--ink); text-decoration: none; }
-      a:hover { color: var(--accent); text-decoration: underline; }
-
-      .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 80px; }
-
-      header.site { border-bottom: 1px solid var(--keyline); padding-bottom: 16px; margin-bottom: 24px; }
-      header.site a.home { font-size: 16px; font-family: var(--mono); color: var(--ink); }
-      header.site a.home:hover { color: var(--accent); }
-
-      article h1 { font-size: 40px; line-height: 1.15; margin: 8px 0 6px; }
-      .sub { font-size: 20px; color: #333; margin: 0 0 14px; }
-      .meta { font-family: var(--mono); font-size: 14px; color: var(--muted); margin-bottom: 8px; }
-
-      figure { margin: 26px 0; }
-      figure img { display: block; width: 100%; max-width: var(--media-max); height: auto; margin-left: auto; margin-right: auto; border: 1px solid var(--keyline); }
-      figcaption { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 6px; }
-
-      figure.hero img { max-width: var(--hero-max); }
-
-      p { margin: 16px 0; }
-
-      
-      .poem { text-align: center; margin: 34px 0; }
-      .poem h3 { margin: 0 0 10px; font-weight: 600; }
-      .poem .verse { white-space: pre-line; }
-
-      hr.keyline { border: 0; border-top: 1px solid var(--keyline); margin: 34px 0; }
-
-      .nav-bottom { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--keyline); font-family: var(--mono); font-size: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
-
-      .subscribe-box{border:1px solid var(--keyline); padding:16px; text-align:center}
-      .subscribe-box button{appearance:none; background:transparent; border:1px solid var(--keyline); padding:8px 14px; font-family:var(--mono); font-size:14px; cursor:pointer; color:var(--ink)}
-      .popup{display:none; position:fixed; inset:0; background:rgba(0,0,0,.4)}
-      .popup-content{background:#fff; border:1px solid var(--keyline); width:min(560px,92vw); margin:8vh auto 0; padding:18px}
-      .close{float:right; font-family:var(--mono); cursor:pointer}
-    </style>
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <div class="wrap">
@@ -201,12 +140,6 @@ At least for now. At least until I am dead.</div>
       </div>
     </div>
 
-    <script>
-      const btn = document.getElementById('subscribeBtn');
-      const popup = document.getElementById('subscribePopup');
-      popup?.addEventListener('click', (e)=>{ if(e.target===popup) popup.style.display='none'; });
-      btn?.addEventListener('click', ()=> popup.style.display='block');
-      document.querySelector('.popup .close')?.addEventListener('click', ()=> popup.style.display='none');
-    </script>
+    <script src="/main.js"></script>
   </body>
 </html>

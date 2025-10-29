@@ -1,0 +1,1 @@
+const btn=document.getElementById('subscribeBtn');const popup=document.getElementById('subscribePopup');const close=document.querySelector('.popup .close');btn?.addEventListener('click',()=>popup.style.display='block');close?.addEventListener('click',()=>popup.style.display='none');popup?.addEventListener('click',e=>{if(e.target===popup)popup.style.display='none'});

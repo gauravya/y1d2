@@ -9,78 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://substackcdn.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
-
-    <style>
-      :root {
-        --bg: #ffffff;
-        --ink: #111111;
-        --muted: #6a6a6a;
-        --accent: #1a5fb4;
-        --keyline: #111111;
-        --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-        --serif: 'Newsreader', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
-        --maxw: 860px;
-      }
-
-      html, body { height: 100%; }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--ink);
-        font-family: var(--serif);
-        line-height: 1.6;
-        font-size: 17px;
-      }
-
-      a { color: var(--ink); text-decoration: none; }
-      a:hover { color: var(--accent); text-decoration: underline; }
-
-      .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 18px 80px; }
-
-      header.site { border-bottom: 1px solid var(--keyline); padding-bottom: 18px; margin-bottom: 28px; }
-      header.site h1 { font-weight: 600; font-size: 28px; margin: 0 0 6px 0; letter-spacing: 0.2px; }
-      .strap { font-family: var(--mono); color: var(--muted); font-size: 14px; }
-
-      .subscription-box { border: 1px solid var(--keyline); padding: 16px; margin: 22px 0 34px; background: #fff; text-align: center; }
-      .subscription-box p { margin: 0 0 12px 0; font-family: var(--mono); font-size: 14px; color: var(--ink); }
-      #subscribeBtn { appearance: none; background: transparent; border: 1px solid var(--keyline); padding: 8px 14px; font-family: var(--mono); font-size: 14px; cursor: pointer; color: var(--ink); }
-      #subscribeBtn:hover { background: #fff; }
-      .popup { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.4); }
-      .popup-content { background: #fff; border: 1px solid var(--keyline); width: min(560px, 92vw); margin: 8vh auto 0; padding: 18px; }
-      .close { float: right; font-family: var(--mono); cursor: pointer; }
-
-      .latest { margin: 18px 0 36px; }
-      .latest-card { display: grid; grid-template-columns: 1.4fr 2fr; gap: 0; border: 1px solid var(--keyline); text-decoration: none; color: inherit; background: #fff; }
-      .latest-card .media { border-right: 1px solid var(--keyline); }
-      .latest-card img { display: block; width: 100%; height: 100%; object-fit: cover; }
-      .latest-card .body { padding: 18px; }
-      .meta { font-family: var(--mono); font-size: 13px; color: var(--muted); }
-      .latest-card h2 { margin: 8px 0 8px; font-size: 28px; line-height: 1.2; }
-      .lede { color: #333; margin: 0 0 10px 0; }
-      .read { font-family: var(--mono); font-size: 13px; }
-
-      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-      .card { border: 1px solid var(--keyline); background: #fff; display: flex; flex-direction: column; }
-      .card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--keyline); }
-      .card .pad { padding: 14px; }
-      .card h3 { margin: 8px 0; font-size: 20px; line-height: 1.25; }
-      .card .meta { margin-top: 2px; }
-      .card h3 a, .card h3 a:visited { color: var(--ink); }
-      .card h3 a:hover { text-decoration: underline; }
-
-      .archive-card { border: 1px solid var(--keyline); background: #fff; padding: 14px; display: flex; align-items: center; justify-content: center; }
-      .archive-card a { font-family: var(--mono); font-size: 14px; color: var(--ink); }
-      .archive-card a:hover { color: var(--accent); text-decoration: underline; }
-
-      footer { border-top: 1px solid var(--keyline); margin-top: 48px; padding-top: 16px; color: var(--muted); font-family: var(--mono); font-size: 13px; }
-
-      @media (max-width: 800px) {
-        .latest-card { grid-template-columns: 1fr; }
-        .latest-card .media { border-right: 0; border-bottom: 1px solid var(--keyline); }
-        .grid { grid-template-columns: 1fr; }
-      }
-    </style>
+    <link rel="stylesheet" href="/main.css" />
   </head>
 
   <body>
@@ -130,7 +59,6 @@
         </article>
 
         <article class="card">
-          <a href="/bald"></a>
           <div class="pad">
             <div class="meta"><time datetime="2025-09-24">24 Sept 2025</time></div>
             <h3><a href="/bald">Bald Barbers</a></h3>
@@ -139,7 +67,6 @@
         </article>
 
         <article class="card">
-          <a href="/robert"></a>
           <div class="pad">
             <div class="meta"><time datetime="2025-09-09">9 Sept 2025</time></div>
             <h3><a href="/robert">There he is.</a></h3>
@@ -148,13 +75,6 @@
         </article>
       </section>
 
-    <script>
-      const btn = document.getElementById('subscribeBtn');
-      const popup = document.getElementById('subscribePopup');
-      const closeBtn = document.querySelector('.popup .close');
-      btn?.addEventListener('click', () => (popup.style.display = 'block'));
-      closeBtn?.addEventListener('click', () => (popup.style.display = 'none'));
-      popup?.addEventListener('click', (e) => { if (e.target === popup) popup.style.display = 'none'; });
-    </script>
+    <script src="/main.js"></script>
   </body>
 </html>
