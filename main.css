@@ -1,7 +1,8 @@
 :root{--bg:#ffffba;--ink:#1a1a1a;--muted:#666666;--accent:#2563eb;--keyline:#2a2a2a;--card-bg:#fffef5;--mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--serif:'Newsreader',ui-serif,Georgia,Cambria,'Times New Roman',serif;--maxw-home:880px;--maxw-article:720px;--media-max:400px;--hero-max:440px}
 html,body{height:100%}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.68;font-size:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.68;font-size:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;animation:bgShift 60s ease-in-out infinite}
+@keyframes bgShift{0%,100%{background-color:#ffffba}25%{background-color:#ffffc4}50%{background-color:#ffffb0}75%{background-color:#ffffbd}}
 a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s ease}
 a:hover{border-bottom-color:var(--accent)}
 .wrap{max-width:var(--maxw-home);margin:0 auto;padding:40px 24px 100px}
@@ -39,25 +40,30 @@ header.site a.home:hover{border-bottom-color:var(--accent)}
 .card h3 a:hover{border-bottom:1px solid var(--accent)}
 footer{border-top:1px solid var(--keyline);margin-top:60px;padding-top:20px;color:var(--muted);font-family:var(--mono);font-size:12px}
 article .wrap{max-width:var(--maxw-article)}
-article{font-size:19px;line-height:1.7;position:relative;overflow:hidden}
-article::before{content:'t h e s t o r i e s p o i n t h e r e w a t e r m i l l s g r i n d i n g w h e e l s m e t a l w o r k s h e f f i e l d m s s t e e l d e p r i v e d o f s t e e l t h e b u t t o n s w i l l b u r s t f r o m o u r c o a t s r o l l i n g d o w n l i k e r a i n l i k e e y e s w o n t s h e';position:fixed;left:-20px;top:0;width:15px;height:100vh;font-family:var(--mono);font-size:10px;color:rgba(26,26,26,0.15);writing-mode:vertical-rl;letter-spacing:8px;word-spacing:20px;pointer-events:none;z-index:100;animation:crumbleLeft 120s linear infinite;line-height:1}
-article::after{content:'b u t t o n m a k e r d a v i d h e y r o b e r t g o o d w i n d o f f a p p r e n t i c e c u t l e r s e m e r g e b u f f e r g i r l s s i l v e r w a r e t h e m i l l s a r e d y i n g t h e s h e a f h a s s l o w e d i s l e o f w i g h t r i v e r d u n c h o l e r a';position:fixed;right:-20px;top:0;width:15px;height:100vh;font-family:var(--mono);font-size:10px;color:rgba(26,26,26,0.15);writing-mode:vertical-rl;letter-spacing:8px;word-spacing:20px;pointer-events:none;z-index:100;animation:crumbleRight 100s linear infinite;line-height:1}
-@keyframes crumbleLeft{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
-@keyframes crumbleRight{0%{transform:translateY(-120%)}100%{transform:translateY(100%)}}
-article h1{font-size:44px;line-height:1.15;margin:14px 0 10px;font-weight:600;letter-spacing:-0.8px}
+article{font-size:19px;line-height:1.7;position:relative;animation:articleDrift 40s ease-in-out infinite}
+article h1{font-size:44px;line-height:1.15;margin:14px 0 10px;font-weight:600;letter-spacing:-0.8px;animation:titleWobble 15s ease-in-out infinite}
 article .sub{font-size:21px;color:var(--muted);margin:0 0 20px;font-weight:400;line-height:1.45;font-style:italic}
 article .meta{font-size:12px;margin-bottom:20px}
-article p{margin:18px 0;font-size:19px}
-figure{margin:48px 0}
-figure img{display:block;width:100%;max-width:var(--media-max);height:auto;margin-left:auto;margin-right:auto;border:1px solid var(--keyline)}
+article p{margin:18px 0;font-size:19px;animation:paragraphShift 12s ease-in-out infinite}
+article p:nth-child(even){animation:paragraphShift 14s ease-in-out infinite reverse}
+article p:nth-child(3n){animation:paragraphShift 16s ease-in-out infinite}
+@keyframes articleDrift{0%,100%{transform:rotate(0deg) translateX(0)}25%{transform:rotate(0.15deg) translateX(1px)}50%{transform:rotate(-0.1deg) translateX(-0.5px)}75%{transform:rotate(0.2deg) translateX(0.5px)}}
+@keyframes titleWobble{0%,100%{transform:skewX(0deg)}50%{transform:skewX(-0.3deg)}}
+@keyframes paragraphShift{0%,100%{transform:translateX(0) skewX(0deg);letter-spacing:normal}33%{transform:translateX(-2px) skewX(0.15deg);letter-spacing:0.01em}66%{transform:translateX(1px) skewX(-0.1deg);letter-spacing:-0.005em}}
+figure{margin:48px 0;animation:figureDrift 25s ease-in-out infinite}
+figure img{display:block;width:100%;max-width:var(--media-max);height:auto;margin-left:auto;margin-right:auto;border:1px solid var(--keyline);animation:imageDistort 30s ease-in-out infinite}
+@keyframes figureDrift{0%,100%{transform:translateX(0) rotate(0deg)}33%{transform:translateX(-3px) rotate(-0.2deg)}66%{transform:translateX(2px) rotate(0.15deg)}}
+@keyframes imageDistort{0%,100%{transform:scale(1) skewX(0deg)}50%{transform:scale(0.998) skewX(0.1deg)}}
 figure.hero img{max-width:var(--hero-max)}
 figure.art{margin:28px 0;display:flex;justify-content:center}
 figure.art img{width:min(460px,92vw)}
 figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px;text-align:center;font-style:italic}
-.dialogue{font-family:var(--mono);font-size:16px;color:var(--ink);margin:28px 0;padding:18px 20px;border-left:2px solid var(--keyline);background:var(--card-bg);position:relative;letter-spacing:0.02em;word-spacing:0.08em}
-.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply;z-index:1}
+.dialogue{font-family:var(--mono);font-size:16px;color:var(--ink);margin:28px 0;padding:18px 20px;border-left:2px solid var(--keyline);background:var(--card-bg);position:relative;letter-spacing:0.02em;word-spacing:0.08em;animation:dialogueBreathe 18s ease-in-out infinite}
+.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply;z-index:1;animation:scanDrift 20s linear infinite}
 .dialogue::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;z-index:2}
 .dialogue p{margin:8px 0;line-height:1.85;position:relative;z-index:3}
+@keyframes dialogueBreathe{0%,100%{transform:scaleX(1) translateY(0)}50%{transform:scaleX(0.998) translateY(-0.5px)}}
+@keyframes scanDrift{0%{transform:translateY(0)}100%{transform:translateY(4px)}}
 .dialogue.breathe{padding:28px 32px;line-height:2.2;word-spacing:0.15em;letter-spacing:0.05em}
 .dialogue.breathe p{margin:14px 0}
 .dialogue.glitch{background:linear-gradient(105deg,#ffffba 0%,#fffef5 30%,#fff9e8 50%,#fffef5 70%,#ffffba 100%);border-left:2px solid rgba(42,42,42,0.7);box-shadow:1px 0 0 rgba(255,0,0,0.06),-1px 0 0 rgba(0,255,255,0.06),1px 0 8px rgba(0,0,0,0.04);transform:skewX(-0.2deg)}
@@ -76,9 +82,8 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:
 @keyframes waveSubtle{0%,100%{transform:translateX(0)}50%{transform:translateX(-1px)}}
 article p.dream{font-style:italic;opacity:0.9;letter-spacing:0.02em;text-shadow:1px 1px 2px rgba(26,26,26,0.15),2px 2px 3px rgba(255,0,100,0.08);transform:perspective(800px) rotateX(0.5deg);filter:blur(0.15px);animation:dreamFloat 6s ease-in-out infinite;background:linear-gradient(90deg,transparent 0%,rgba(255,245,245,0.2) 50%,transparent 100%)}
 article p.shift{border-left:2px solid rgba(200,100,100,0.25);padding-left:18px;margin-left:-18px;background:linear-gradient(90deg,rgba(255,254,230,0.3) 0%,rgba(255,254,245,0.15) 50%,transparent 100%);transform:translateX(-1px) skewX(-0.15deg);box-shadow:inset 2px 0 4px rgba(255,220,100,0.08)}
-article p.breathe{line-height:2.1;margin:28px 0;letter-spacing:0.04em;word-spacing:0.08em;transform:scale(1.01);animation:breathePulse 8s ease-in-out infinite}
+article p.breathe{line-height:2.1;margin:28px 0;letter-spacing:0.04em;word-spacing:0.08em;transform:scale(1.01)}
 @keyframes dreamFloat{0%,100%{transform:perspective(800px) rotateX(0.5deg) translateY(0)}50%{transform:perspective(800px) rotateX(0.5deg) translateY(-1px)}}
-@keyframes breathePulse{0%,100%{letter-spacing:0.04em}50%{letter-spacing:0.05em}}
 .poem{text-align:center;margin:44px 0;padding:28px;background:var(--card-bg);border:1px solid var(--keyline)}
 .poem h3{margin:0 0 14px;font-weight:600;font-size:22px;letter-spacing:-0.3px}
 .poem .verse{white-space:pre-line;line-height:1.75;font-size:17px}
