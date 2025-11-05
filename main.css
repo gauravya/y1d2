@@ -39,7 +39,11 @@ header.site a.home:hover{border-bottom-color:var(--accent)}
 .card h3 a:hover{border-bottom:1px solid var(--accent)}
 footer{border-top:1px solid var(--keyline);margin-top:60px;padding-top:20px;color:var(--muted);font-family:var(--mono);font-size:12px}
 article .wrap{max-width:var(--maxw-article)}
-article{font-size:19px;line-height:1.7;position:relative}
+article{font-size:19px;line-height:1.7;position:relative;overflow:hidden}
+article::before{content:'t h e s t o r i e s p o i n t h e r e w a t e r m i l l s g r i n d i n g w h e e l s m e t a l w o r k s h e f f i e l d m s s t e e l d e p r i v e d o f s t e e l t h e b u t t o n s w i l l b u r s t f r o m o u r c o a t s r o l l i n g d o w n l i k e r a i n l i k e e y e s w o n t s h e';position:fixed;left:-20px;top:0;width:15px;height:100vh;font-family:var(--mono);font-size:10px;color:rgba(26,26,26,0.15);writing-mode:vertical-rl;letter-spacing:8px;word-spacing:20px;pointer-events:none;z-index:100;animation:crumbleLeft 120s linear infinite;line-height:1}
+article::after{content:'b u t t o n m a k e r d a v i d h e y r o b e r t g o o d w i n d o f f a p p r e n t i c e c u t l e r s e m e r g e b u f f e r g i r l s s i l v e r w a r e t h e m i l l s a r e d y i n g t h e s h e a f h a s s l o w e d i s l e o f w i g h t r i v e r d u n c h o l e r a';position:fixed;right:-20px;top:0;width:15px;height:100vh;font-family:var(--mono);font-size:10px;color:rgba(26,26,26,0.15);writing-mode:vertical-rl;letter-spacing:8px;word-spacing:20px;pointer-events:none;z-index:100;animation:crumbleRight 100s linear infinite;line-height:1}
+@keyframes crumbleLeft{0%{transform:translateY(-100%)}100%{transform:translateY(100%)}}
+@keyframes crumbleRight{0%{transform:translateY(-120%)}100%{transform:translateY(100%)}}
 article h1{font-size:44px;line-height:1.15;margin:14px 0 10px;font-weight:600;letter-spacing:-0.8px}
 article .sub{font-size:21px;color:var(--muted);margin:0 0 20px;font-weight:400;line-height:1.45;font-style:italic}
 article .meta{font-size:12px;margin-bottom:20px}
