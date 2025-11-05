@@ -1,8 +1,7 @@
 :root{--bg:#ffffba;--ink:#1a1a1a;--muted:#666666;--accent:#2563eb;--keyline:#2a2a2a;--card-bg:#fffef5;--mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--serif:'Newsreader',ui-serif,Georgia,Cambria,'Times New Roman',serif;--maxw-home:880px;--maxw-article:720px;--media-max:400px;--hero-max:440px}
 html,body{height:100%}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.68;font-size:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;animation:bgShift 60s ease-in-out infinite}
-@keyframes bgShift{0%,100%{background-color:#ffffba}25%{background-color:#ffffc4}50%{background-color:#ffffb0}75%{background-color:#ffffbd}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.68;font-size:18px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s ease}
 a:hover{border-bottom-color:var(--accent)}
 .wrap{max-width:var(--maxw-home);margin:0 auto;padding:40px 24px 100px}
@@ -40,30 +39,21 @@ header.site a.home:hover{border-bottom-color:var(--accent)}
 .card h3 a:hover{border-bottom:1px solid var(--accent)}
 footer{border-top:1px solid var(--keyline);margin-top:60px;padding-top:20px;color:var(--muted);font-family:var(--mono);font-size:12px}
 article .wrap{max-width:var(--maxw-article)}
-article{font-size:19px;line-height:1.7;position:relative;animation:articleDrift 40s ease-in-out infinite}
-article h1{font-size:44px;line-height:1.15;margin:14px 0 10px;font-weight:600;letter-spacing:-0.8px;animation:titleWobble 15s ease-in-out infinite}
+article{font-size:19px;line-height:1.7;position:relative}
+article h1{font-size:44px;line-height:1.15;margin:14px 0 10px;font-weight:600;letter-spacing:-0.8px}
 article .sub{font-size:21px;color:var(--muted);margin:0 0 20px;font-weight:400;line-height:1.45;font-style:italic}
 article .meta{font-size:12px;margin-bottom:20px}
-article p{margin:18px 0;font-size:19px;animation:paragraphShift 12s ease-in-out infinite}
-article p:nth-child(even){animation:paragraphShift 14s ease-in-out infinite reverse}
-article p:nth-child(3n){animation:paragraphShift 16s ease-in-out infinite}
-@keyframes articleDrift{0%,100%{transform:rotate(0deg) translateX(0)}25%{transform:rotate(0.15deg) translateX(1px)}50%{transform:rotate(-0.1deg) translateX(-0.5px)}75%{transform:rotate(0.2deg) translateX(0.5px)}}
-@keyframes titleWobble{0%,100%{transform:skewX(0deg)}50%{transform:skewX(-0.3deg)}}
-@keyframes paragraphShift{0%,100%{transform:translateX(0) skewX(0deg);letter-spacing:normal}33%{transform:translateX(-2px) skewX(0.15deg);letter-spacing:0.01em}66%{transform:translateX(1px) skewX(-0.1deg);letter-spacing:-0.005em}}
-figure{margin:48px 0;animation:figureDrift 25s ease-in-out infinite}
-figure img{display:block;width:100%;max-width:var(--media-max);height:auto;margin-left:auto;margin-right:auto;border:1px solid var(--keyline);animation:imageDistort 30s ease-in-out infinite}
-@keyframes figureDrift{0%,100%{transform:translateX(0) rotate(0deg)}33%{transform:translateX(-3px) rotate(-0.2deg)}66%{transform:translateX(2px) rotate(0.15deg)}}
-@keyframes imageDistort{0%,100%{transform:scale(1) skewX(0deg)}50%{transform:scale(0.998) skewX(0.1deg)}}
+article p{margin:18px 0;font-size:19px}
+figure{margin:48px 0}
+figure img{display:block;width:100%;max-width:var(--media-max);height:auto;margin-left:auto;margin-right:auto;border:1px solid var(--keyline)}
 figure.hero img{max-width:var(--hero-max)}
 figure.art{margin:28px 0;display:flex;justify-content:center}
 figure.art img{width:min(460px,92vw)}
 figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px;text-align:center;font-style:italic}
-.dialogue{font-family:var(--mono);font-size:16px;color:var(--ink);margin:28px 0;padding:18px 20px;border-left:2px solid var(--keyline);background:var(--card-bg);position:relative;letter-spacing:0.02em;word-spacing:0.08em;animation:dialogueBreathe 18s ease-in-out infinite}
-.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply;z-index:1;animation:scanDrift 20s linear infinite}
+.dialogue{font-family:var(--mono);font-size:16px;color:var(--ink);margin:28px 0;padding:18px 20px;border-left:2px solid var(--keyline);background:var(--card-bg);position:relative;letter-spacing:0.02em;word-spacing:0.08em}
+.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply;z-index:1}
 .dialogue::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;z-index:2}
 .dialogue p{margin:8px 0;line-height:1.85;position:relative;z-index:3}
-@keyframes dialogueBreathe{0%,100%{transform:scaleX(1) translateY(0)}50%{transform:scaleX(0.998) translateY(-0.5px)}}
-@keyframes scanDrift{0%{transform:translateY(0)}100%{transform:translateY(4px)}}
 .dialogue.breathe{padding:28px 32px;line-height:2.2;word-spacing:0.15em;letter-spacing:0.05em}
 .dialogue.breathe p{margin:14px 0}
 .dialogue.glitch{background:linear-gradient(105deg,#ffffba 0%,#fffef5 30%,#fff9e8 50%,#fffef5 70%,#ffffba 100%);border-left:2px solid rgba(42,42,42,0.7);box-shadow:1px 0 0 rgba(255,0,0,0.06),-1px 0 0 rgba(0,255,255,0.06),1px 0 8px rgba(0,0,0,0.04);transform:skewX(-0.2deg)}
