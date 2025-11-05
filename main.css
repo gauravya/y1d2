@@ -52,8 +52,9 @@ figure.art{margin:28px 0;display:flex;justify-content:center}
 figure.art img{width:min(460px,92vw)}
 figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:10px;text-align:center;font-style:italic}
 .dialogue{font-family:var(--mono);font-size:16px;color:var(--ink);margin:28px 0;padding:18px 20px;border-left:2px solid var(--keyline);background:var(--card-bg);position:relative;letter-spacing:0.02em;word-spacing:0.08em}
-.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply}
-.dialogue p{margin:8px 0;line-height:1.85}
+.dialogue::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.015) 2px,rgba(0,0,0,0.015) 4px);pointer-events:none;mix-blend-mode:multiply;z-index:1}
+.dialogue::after{content:'';position:absolute;inset:0;pointer-events:none;opacity:0;z-index:2}
+.dialogue p{margin:8px 0;line-height:1.85;position:relative;z-index:3}
 .dialogue.breathe{padding:28px 32px;line-height:2.2;word-spacing:0.15em;letter-spacing:0.05em}
 .dialogue.breathe p{margin:14px 0}
 .dialogue.glitch{background:linear-gradient(105deg,var(--card-bg) 0%,#fffef5 45%,#fffff0 55%,var(--card-bg) 100%);border-left:2px solid rgba(42,42,42,0.6);box-shadow:2px 0 8px rgba(0,0,0,0.03),-1px 0 4px rgba(255,255,200,0.4)}
@@ -61,7 +62,7 @@ figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:
 .dialogue.tilted{transform:rotate(-0.4deg);margin:36px 0}
 .dialogue.dense{padding:12px 18px;line-height:1.5;letter-spacing:-0.01em;word-spacing:0.02em;background:rgba(255,254,245,0.7)}
 .dialogue.dense p{margin:4px 0}
-.dialogue.grain::before{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="n"><feTurbulence baseFrequency="0.9" numOctaves="3"/><feColorMatrix values="0 0 0 0 0, 0 0 0 0 0, 0 0 0 0 0, 0 0 0 0.03 0"/></filter><rect width="300" height="300" filter="url(%23n)"/></svg>');opacity:0.6}
+.dialogue.grain::after{background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="n"><feTurbulence baseFrequency="0.9" numOctaves="3"/><feColorMatrix values="0 0 0 0 0, 0 0 0 0 0, 0 0 0 0 0, 0 0 0 0.03 0"/></filter><rect width="300" height="300" filter="url(%23n)"/></svg>');opacity:0.6}
 .dialogue.wavy{border-left:none;border:1px solid var(--keyline);border-radius:2px 0 2px 0;padding:22px 28px}
 .dialogue.echo{text-shadow:0.5px 0.5px 0 rgba(26,26,26,0.06),1px 1px 0 rgba(26,26,26,0.03);letter-spacing:0.08em}
 .dialogue:hover{transform:translateY(-1px);transition:transform 0.3s ease}
