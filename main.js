@@ -5,11 +5,13 @@ let previewWindow = null;
 let previewTimeout = null;
 
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('article a[href^="http"]');
+  const links = document.querySelectorAll('article a[href]');
 
   links.forEach(link => {
     link.addEventListener('mouseenter', (e) => {
-      const url = link.getAttribute('href');
+      const href = link.getAttribute('href');
+      // Resolve relative URLs to absolute
+      const url = new URL(href, window.location.href).href;
 
       previewTimeout = setTimeout(() => {
         // Create preview window
