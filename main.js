@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const url = new URL(href, window.location.href).href;
 
       previewTimeout = setTimeout(() => {
+        // Close existing preview if any
+        if (previewWindow) {
+          previewWindow.remove();
+        }
+
         // Create preview window
         previewWindow = document.createElement('div');
         previewWindow.className = 'link-preview';
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         browserChrome.className = 'link-preview-chrome';
         browserChrome.innerHTML = `
           <div class="link-preview-dots">
-            <span></span><span></span><span></span>
+            <span class="close-preview"></span><span></span><span></span>
           </div>
           <div class="link-preview-url">${url}</div>
         `;
@@ -37,17 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Position near cursor
         const rect = link.getBoundingClientRect();
-        previewWindow.style.left = Math.min(e.clientX + 20, window.innerWidth - 420) + 'px';
-        previewWindow.style.top = Math.min(rect.top, window.innerHeight - 320) + 'px';
+        previewWindow.style.left = Math.min(e.clientX + 20, window.innerWidth - 500) + 'px';
+        previewWindow.style.top = Math.min(rect.top, window.innerHeight - 380) + 'px';
+
+        // Close button functionality
+        const closeBtn = previewWindow.querySelector('.close-preview');
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          previewWindow.remove();
+          previewWindow = null;
+        });
       }, 500); // Delay before showing
     });
 
     link.addEventListener('mouseleave', () => {
       clearTimeout(previewTimeout);
-      if (previewWindow) {
-        previewWindow.remove();
-        previewWindow = null;
-      }
     });
+  });
+
+  // Close preview when clicking outside
+  document.addEventListener('click', (e) => {
+    if (previewWindow && !previewWindow.contains(e.target)) {
+      previewWindow.remove();
+      previewWindow = null;
+    }
   });
 });
