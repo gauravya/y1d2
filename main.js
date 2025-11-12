@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         yellowBtn.addEventListener('click', (e) => {
           e.stopPropagation();
           window.open(url, '_blank');
+          window.focus(); // Keep focus on current window
         });
 
         // Green button - open in new tab and switch to it (foreground)
