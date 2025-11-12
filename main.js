@@ -63,8 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const yellowBtn = previewWindow.querySelector('.open-background');
         yellowBtn.addEventListener('click', (e) => {
           e.stopPropagation();
-          window.open(url, '_blank');
-          window.focus(); // Keep focus on current window
+          const newWindow = window.open(url, '_blank');
+          if (newWindow) {
+            newWindow.blur();
+            window.focus();
+            setTimeout(() => {
+              window.focus();
+            }, 10);
+          }
         });
 
         // Green button - open in new tab and switch to it (foreground)
