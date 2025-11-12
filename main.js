@@ -63,24 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const yellowBtn = previewWindow.querySelector('.open-background');
         yellowBtn.addEventListener('click', (e) => {
           e.stopPropagation();
-          // Create a hidden link and simulate ctrl+click to open in background
-          const link = document.createElement('a');
-          link.href = url;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-          link.style.display = 'none';
-          document.body.appendChild(link);
-
-          // Simulate ctrl+click which opens in background
-          const clickEvent = new MouseEvent('click', {
-            bubbles: true,
-            cancelable: true,
-            view: window,
-            ctrlKey: true,
-            metaKey: true
-          });
-          link.dispatchEvent(clickEvent);
-          document.body.removeChild(link);
+          const newWindow = window.open(url, '_blank');
+          if (newWindow) {
+            newWindow.blur();
+            window.focus();
+            setTimeout(() => {
+              window.focus();
+            }, 10);
+          }
         });
 
         // Green button - open in new tab and switch to it (foreground)
