@@ -7,8 +7,12 @@ let previewTimeout = null;
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('article a[href]');
 
+  let isOverLink = false;
+  let isOverPreview = false;
+
   links.forEach(link => {
     link.addEventListener('mouseenter', (e) => {
+      isOverLink = true;
       const href = link.getAttribute('href');
       // Resolve relative URLs to absolute
       const url = new URL(href, window.location.href).href;
@@ -51,20 +55,38 @@ document.addEventListener('DOMContentLoaded', () => {
           e.stopPropagation();
           previewWindow.remove();
           previewWindow = null;
+          isOverPreview = false;
+          isOverLink = false;
+        });
+
+        // Track mouse over preview
+        previewWindow.addEventListener('mouseenter', () => {
+          isOverPreview = true;
+        });
+
+        previewWindow.addEventListener('mouseleave', () => {
+          isOverPreview = false;
+          // Close if not over link either
+          setTimeout(() => {
+            if (!isOverLink && !isOverPreview && previewWindow) {
+              previewWindow.remove();
+              previewWindow = null;
+            }
+          }, 100);
         });
       }, 500); // Delay before showing
     });
 
     link.addEventListener('mouseleave', () => {
       clearTimeout(previewTimeout);
+      isOverLink = false;
+      // Close if not over preview
+      setTimeout(() => {
+        if (!isOverLink && !isOverPreview && previewWindow) {
+          previewWindow.remove();
+          previewWindow = null;
+        }
+      }, 100);
     });
-  });
-
-  // Close preview when clicking outside
-  document.addEventListener('click', (e) => {
-    if (previewWindow && !previewWindow.contains(e.target)) {
-      previewWindow.remove();
-      previewWindow = null;
-    }
   });
 });
