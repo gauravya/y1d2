@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         browserChrome.className = 'link-preview-chrome';
         browserChrome.innerHTML = `
           <div class="link-preview-dots">
-            <span class="close-preview"></span><span></span><span></span>
+            <span class="close-preview"></span><span class="open-background"></span><span class="open-foreground"></span>
           </div>
           <div class="link-preview-url">${url}</div>
         `;
@@ -57,6 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
           previewWindow = null;
           isOverPreview = false;
           isOverLink = false;
+        });
+
+        // Yellow button - open in new tab (background)
+        const yellowBtn = previewWindow.querySelector('.open-background');
+        yellowBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          window.open(url, '_blank');
+        });
+
+        // Green button - open in new tab and switch to it (foreground)
+        const greenBtn = previewWindow.querySelector('.open-foreground');
+        greenBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const newTab = window.open(url, '_blank');
+          if (newTab) newTab.focus();
         });
 
         // Track mouse over preview

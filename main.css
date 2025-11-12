@@ -88,7 +88,9 @@ hr.keyline{border:0;border-top:1px solid var(--keyline);margin:44px 0}
 .link-preview-dots span:nth-child(1){background:#ff5f57;border:0.5px solid rgba(0,0,0,0.08)}
 .link-preview-dots span:nth-child(1):hover{background:#ff3b30;transform:scale(1.1)}
 .link-preview-dots span:nth-child(2){background:#ffbd2e;border:0.5px solid rgba(0,0,0,0.08)}
+.link-preview-dots span:nth-child(2):hover{background:#ffaa00;transform:scale(1.1)}
 .link-preview-dots span:nth-child(3){background:#28c840;border:0.5px solid rgba(0,0,0,0.08)}
+.link-preview-dots span:nth-child(3):hover{background:#20a030;transform:scale(1.1)}
 .link-preview-url{font-family:var(--mono);font-size:11px;color:#666;background:rgba(255,255,255,0.9);padding:6px 10px;border-radius:6px;border:1px solid rgba(0,0,0,0.08);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.2}
 .link-preview-frame{width:100%;height:320px;border:none;background:white;display:block;transition:opacity 0.2s ease}
 @keyframes previewFadeIn{from{opacity:0;transform:translateY(-10px) scale(0.98)}to{opacity:1;transform:translateY(0) scale(1)}}
