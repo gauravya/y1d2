@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meeting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://substackcdn.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+      /* The page background drifts through paper tones as the poem moves.
+         Each <section data-bg> below names its tone; the script at the
+         bottom applies whichever section is under the reader. Remove the
+         script and the page stays the site yellow. */
+      html, body { transition: background-color 1.6s ease; }
+      @media (prefers-reduced-motion: reduce) { html, body { transition: none; } }
+
+      .verse { max-width: 560px; }
+      .verse section { padding: 0 0 36px; }
+      .verse p { margin: 0 0 26px; font-size: 19px; line-height: 1.6; }
+      .verse p:last-child { margin-bottom: 0; }
+
+      /* "Then silence." is followed by an empty stretch of page. */
+      .silence { height: 72vh; }
+
+      .verse .last { margin-top: 44px; }
+
+      @media (max-width: 800px) {
+        .verse p { font-size: 18px; }
+        .silence { height: 60vh; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site">
+        <a class="home" href="/">← Home</a>
+      </header>
+
+      <article>
+        <div class="meta">1 Sept 2026</div>
+        <h1>Meeting</h1>
+
+        <div class="verse">
+          <section data-bg="#ffffba">
+            <p>Hands full of love,</p>
+            <p>compassion, and</p>
+            <p>kindness.</p>
+
+            <p>The excellent questioning mind<br />goes off to see.</p>
+
+            <p>Goes off and sees</p>
+
+            <p>what?</p>
+
+            <p>Hope and love?<br />Pain and sorrow?<br />Something within others?</p>
+
+            <p>And oh—</p>
+
+            <p>don't forget the food,<br />the stories,<br />hugs and laughter.</p>
+          </section>
+
+          <section data-bg="#fdf9c4">
+            <p>Someone rises<br />something in them<br />does not stay seated.</p>
+
+            <p>A heart that has already been through it,<br />racing and waiting,<br />compelled to say something.</p>
+
+            <p>Then silence.</p>
+          </section>
+
+          <section data-bg="#f2f0e9">
+            <div class="silence" aria-hidden="true"></div>
+
+            <p>Nothing reaches back.</p>
+
+            <p>No one says<br />I know you.</p>
+
+            <p>No one says<br />I am like you.</p>
+
+            <p>And I wonder—</p>
+
+            <p>is this what they mean<br />by listening?</p>
+          </section>
+
+          <section data-bg="#ecebe3">
+            <p>Must they sit?<br />Must they wait?</p>
+
+            <p>Does the mind that came here to see<br />sit too,</p>
+
+            <p>and discover</p>
+
+            <p>that to see someone<br />I must do nothing?</p>
+          </section>
+
+          <section data-bg="#fbecb8">
+            <p>Jacket potato in one place.<br />Pasta in another.</p>
+
+            <p>God beside the tea.<br />Christ somewhere between<br />the washing-up and the walk home.</p>
+
+            <p>Sometimes you pop off your seat<br />to help yourself to advice—</p>
+
+            <p>there is no instruction,<br />no prescription,<br />only ideas from others,</p>
+
+            <p>small offerings<br />placed in your hands.</p>
+          </section>
+
+          <section data-bg="#f3ecd9">
+            <p>They use words like Christ<br />and God.</p>
+
+            <p>And yet sometimes<br />I think I know<br />what they are pointing at.</p>
+
+            <p>Is that enough?</p>
+
+            <p>Can you recognise a thing<br />and refuse its name?</p>
+
+            <p>Can you sit among believers<br />without becoming one?</p>
+          </section>
+
+          <section data-bg="#e3e4e2">
+            <p>After all—</p>
+
+            <p>why are you here?</p>
+
+            <p>What did you come to see?</p>
+
+            <p>Something within others?</p>
+
+            <p>Or did you come hoping<br />that if you sat still for long enough,</p>
+
+            <p>among all these lives<br />opening briefly into the silence,</p>
+
+            <p class="last">something within you<br />might answer?</p>
+          </section>
+        </div>
+
+        <hr class="keyline" />
+        <div class="subscribe-box">
+          <p style="margin:0 0 10px; font-family:var(--mono); font-size:14px">Get new posts by email</p>
+          <button id="subscribeBtn">Subscribe</button>
+        </div>
+
+        <div class="nav-bottom"><a href="/">← Back to home</a></div>
+      </article>
+    </div>
+
+    <div class="popup" id="subscribePopup" role="dialog" aria-modal="true" aria-labelledby="subLabel">
+      <div class="popup-content">
+        <span class="close" aria-label="Close">×</span>
+        <iframe
+          title="Subscribe to I am Glad We Disagree"
+          loading="lazy"
+          src="https://gauraventh.substack.com/embed"
+          height="320"
+          width="100%"
+          style="border:1px solid var(--keyline); background:#fff"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+    <script>
+      (function () {
+        var secs = [].slice.call(document.querySelectorAll('.verse [data-bg]'));
+        if (!secs.length) return;
+        var root = document.documentElement, body = document.body, current = '', queued = false;
+        function pick() {
+          var line = window.innerHeight * 0.45, best = secs[0];
+          for (var i = 0; i < secs.length; i++) {
+            if (secs[i].getBoundingClientRect().top <= line) best = secs[i];
+          }
+          var bg = best.getAttribute('data-bg');
+          if (bg !== current) {
+            current = bg;
+            body.style.backgroundColor = bg;
+            root.style.backgroundColor = bg;
+          }
+        }
+        window.addEventListener('scroll', function () {
+          if (queued) return;
+          queued = true;
+          requestAnimationFrame(function () { pick(); queued = false; });
+        }, { passive: true });
+        window.addEventListener('resize', pick);
+        pick();
+      })();
+    </script>
+  </body>
+</html>
