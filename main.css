@@ -21,6 +21,7 @@ header.site a.home:hover{border-bottom-color:var(--accent)}
 .latest{margin:28px 0 44px}
 .latest-card{display:grid;grid-template-columns:1fr 1.4fr;gap:0;border:1px solid var(--keyline);text-decoration:none;color:inherit;background:var(--card-bg);transition:transform .2s ease}
 .latest-card:hover{transform:translateY(-2px)}
+.latest-card.text{grid-template-columns:1fr}
 .latest-card .media{border-right:1px solid var(--keyline);overflow:hidden}
 .latest-card img{display:block;width:100%;height:100%;object-fit:cover}
 .latest-card .body{padding:24px}
